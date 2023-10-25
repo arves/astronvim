@@ -30,6 +30,22 @@ return {
     -- tables with the `name` key will be registered with which-key if it's installed
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
+
+    -- Splitters
+    ["<leader>sv"] = { "<C-w>v", desc = "Split window vertically" },
+    ["<leader>sh"] = { "<C-w>s", desc = "Split window horizontally" },
+    ["<leader>sx"] = { "<cmd>close<CR>", desc = "Close current split" },
+    ["<leader>se"] = { "<C-w>=", desc = "Make splits equal size" },
+    ["<leader>sH"] = { "<C-w>H", desc = "Move current split to the left" },
+    ["<leader>sL"] = { "<C-w>L", desc = "Move current split to the right" },
+    ["<leader>sJ"] = { "<C-w>J", desc = "Move current split down" },
+    ["<leader>sK"] = { "<C-w>K", desc = "Move current split up" },
+
+    ["<leader>nh"] = { ":nohl<CR>", desc = "Clear search highlights" },
+
+    -- Remap scroll up and down to now center the screen
+    ["<c-d>"] = { "<C-d>zz", desc = "Scroll down and center" },
+    ["<c-u>"] = { "<C-u>zz", desc = "Scroll up and center" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
   },
