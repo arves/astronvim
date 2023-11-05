@@ -42,6 +42,8 @@ return {
     ["<leader>sK"] = { "<C-w>K", desc = "Move current split up" },
 
     ["<leader>nh"] = { ":nohl<CR>", desc = "Clear search highlights" },
+    ["<leader>uTc"] = { ":Coverage<CR>", desc = "Fetch coverage data" },
+    ["<leader>uTC"] = { ":CoverageHide<CR>", desc = "Hide code coverage" },
 
     -- Remap scroll up and down to now center the screen
     ["<c-d>"] = { "<C-d>zz", desc = "Scroll down and center" },
