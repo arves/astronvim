@@ -45,6 +45,15 @@ return {
     ["<leader>uTc"] = { ":Coverage<CR>", desc = "Fetch coverage data" },
     ["<leader>uTC"] = { ":CoverageHide<CR>", desc = "Hide code coverage" },
 
+    ["<leader>Nr"] = { ":lua require('neotest').run.run()<CR>", desc = "Run nearest test" },
+    ["<leader>NR"] = { ":lua require('neotest').run.run(vim.fn.expand('%'))<CR>", desc = "Run all tests in file" },
+    ["<leader>Nd"] = { ":lua require('neotest').run.run({strategy = 'dap'})<CR>", desc = "Debug nearest test" },
+    ["<leader>ND"] = { ":lua require('neotest').run.run({vim.fn.expand('%'), strategy = 'dap'})<CR>", desc = "Debug all tests in file" },
+    ["<leader>Ns"] = { ":lua require('neotest').summary.toggle()<CR>", desc = "Open summary" },
+    ["<leader>Nq"] = { ":lua require('neotest').run.stop()<CR>", desc = "Stop neotest" },
+    ["<leader>Nw"] = { ":lua require('neotest').watch.toggle()<CR>", desc = "Toggle watch" },
+    ["<leader>NW"] = { ":lua require('neotest').watch.toggle(vim.fn.expand('%'))<CR>", desc = "Toggle watch entire file" },
+
     -- Remap scroll up and down to now center the screen
     ["<c-d>"] = { "<C-d>zz", desc = "Scroll down and center" },
     ["<c-u>"] = { "<C-u>zz", desc = "Scroll up and center" },
