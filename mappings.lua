@@ -54,6 +54,16 @@ return {
     ["<leader>Nw"] = { ":lua require('neotest').watch.toggle()<CR>", desc = "Toggle watch" },
     ["<leader>NW"] = { ":lua require('neotest').watch.toggle(vim.fn.expand('%'))<CR>", desc = "Toggle watch entire file" },
 
+    -- Trouble specifics
+    ["<leader>x"] = { desc = "󱍼 Trouble"},
+    ["<leader>xt"] = { ":TodoTrouble<CR>", desc = "Toggle todo" },
+    ["<leader>xd"] = { ":TroubleToggle document_diagnostics<CR>", desc = "Document Diagnostics" },
+    ["<leader>xD"] = { ":TroubleToggle workspace_diagnostics<CR>", desc = "Workspace Diagnostics" },
+    ["<leader>xl"] = { ":TroubleToggle loclist<CR>", desc = "Location List" },
+    ["<leader>xq"] = { ":TroubleToggle quickfix<CR>", desc = "Quickfix List" },
+
+    -- Telescope specifics
+    ["<leader>fT"] = { ":TodoTelescope<CR>", desc = "Toggle todo" },
     -- Remap scroll up and down to now center the screen
     ["<c-d>"] = { "<C-d>zz", desc = "Scroll down and center" },
     ["<c-u>"] = { "<C-u>zz", desc = "Scroll up and center" },
