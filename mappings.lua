@@ -45,6 +45,7 @@ return {
     ["<leader>uTc"] = { ":Coverage<CR>", desc = "Fetch coverage data" },
     ["<leader>uTC"] = { ":CoverageHide<CR>", desc = "Hide code coverage" },
 
+    ["<leader>N"] = { desc = "Neotest" },
     ["<leader>Nr"] = { ":lua require('neotest').run.run()<CR>", desc = "Run nearest test" },
     ["<leader>NR"] = { ":lua require('neotest').run.run(vim.fn.expand('%'))<CR>", desc = "Run all tests in file" },
     ["<leader>Nd"] = { ":lua require('neotest').run.run({strategy = 'dap'})<CR>", desc = "Debug nearest test" },
