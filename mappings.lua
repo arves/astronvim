@@ -70,6 +70,11 @@ return {
     ["<c-u>"] = { "<C-u>zz", desc = "Scroll up and center" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+
+    -- Diff view
+    ["<leader>gf"] = { ":DiffviewFileHistory %<CR>", desc = "View current file history" },
+    ["<leader>gF"] = { ":DiffviewFileHistory<CR>", desc = "View complete history" },
+
   },
   t = {
     -- setting a mapping to false will disable it
