@@ -1,7 +1,8 @@
 return {
   {
     "sindrets/diffview.nvim",
-    event = "User AstroGitFile",
+    -- event = "User AstroGitFile",
+    event = "VeryLazy",
     cmd = { "DiffviewOpen" },
   },
   {
