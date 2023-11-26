@@ -32,6 +32,7 @@ return {
     ["<leader>b"] = { name = "Buffers" },
 
     -- Splitters
+    ["<leader>s"] = { desc = "󰤼 Splitters" },
     ["<leader>sv"] = { "<C-w>v", desc = "Split window vertically" },
     ["<leader>sh"] = { "<C-w>s", desc = "Split window horizontally" },
     ["<leader>sx"] = { "<cmd>close<CR>", desc = "Close current split" },
@@ -72,8 +73,13 @@ return {
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
 
     -- Diff view
-    ["<leader>gf"] = { ":DiffviewFileHistory %<CR>", desc = "View current file history" },
-    ["<leader>gF"] = { ":DiffviewFileHistory<CR>", desc = "View complete history" },
+    ["<leader>D"] = { desc = "󰕚 Diffview" },
+    ["<leader>Df"] = { ":DiffviewFileHistory %<CR>", desc = "Current file history" },
+    ["<leader>DF"] = { ":DiffviewFileHistory<CR>", desc = "All history" },
+    ["<leader>Dc"] = { ":DiffviewOpen<CR>", desc = "Changed files" },
+    ["<leader>Dr"] = { ":DiffviewRefresh<CR>", desc = "Refresh" },
+
+    ["<leader>v"] = { desc = "󰇺 Environments" },
 
   },
   t = {
