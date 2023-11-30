@@ -81,6 +81,9 @@ return {
 
     ["<leader>v"] = { desc = "󰇺 Environments" },
 
+    -- Zen mode
+    ["<leader>z"] = {":ZenMode<CR>", desc = "󰋱 Zen mode" },
+
     -- Markdown preview
     ["<leader>um"] = {":MarkdownPreview<CR>", desc = "󰍔 Markdown preview" },
 
