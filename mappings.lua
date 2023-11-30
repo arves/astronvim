@@ -81,6 +81,9 @@ return {
 
     ["<leader>v"] = { desc = "󰇺 Environments" },
 
+    -- Markdown preview
+    ["<leader>um"] = {":MarkdownPreview<CR>", desc = "󰍔 Markdown preview" },
+
   },
   t = {
     -- setting a mapping to false will disable it
