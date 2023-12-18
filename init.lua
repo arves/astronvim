@@ -73,6 +73,9 @@ return {
   -- anything that doesn't fit in the normal config locations above can go here
   polish = function()
     vim.api.nvim_set_option("clipboard","unnamed")
+    -- Set tabstop and shiftwidth to 4
+    vim.opt.tabstop = 4
+    vim.opt.shiftwidth = 4
     -- Set up custom filetypes
     -- vim.filetype.add {
     --   extension = {
