@@ -4,18 +4,48 @@ return {
   -- example of importing a plugin, comment out to use it or add your own
   -- available plugins can be found at https://github.com/AstroNvim/astrocommunity
 
-  -- { import = "astrocommunity.colorscheme.gruvbox-baby"},
-  -- { -- further customize the options set by the community
-  --   "luisiacc/gruvbox-baby",
-  --   lazy = false,
-  --   priority = 1000,
-  --   config = function()
-  --     require("gruvbox-baby").setup({
-  --       transparent_mode = true,
-  --     })
-  --   end,
-  -- },
-  -- { import = "astrocommunity.colorscheme.nightfox-nvim", enabled=true},
-  -- { import = "astrocommunity.pack.python" },
-  -- { import = "astrocommunity.completion.copilot-lua-cmp" },
+  { import = "astrocommunity.pack.typescript", enabled=true},
+  { import = "astrocommunity.pack.python", enabled=true},
+  {
+    "venv-selector.nvim",
+    opts = {},
+	  keys = {{
+      -- Keymap to open VenvSelector to pick a venv.
+		  "<leader>vs", "<cmd>:VenvSelect<cr>",
+		  -- Keymap to retrieve the venv from a cache (the one previously used for the same project directory).
+		  "<leader>vc", "<cmd>:VenvSelectCached<cr>"
+	  },},
+  },
+  { import = "astrocommunity.pack.bash", enabled=true},
+  { import = "astrocommunity.pack.docker", enabled=true},
+  { import = "astrocommunity.motion.flash-nvim", enabled=true},
+  { import = "astrocommunity.pack.json", enabled=true},
+  { import = "astrocommunity.lsp.lsp-signature-nvim", enabled=true},
+  { import = "astrocommunity.pack.markdown", enabled=true},
+  { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim", enabled=true},
+  { import = "astrocommunity.test.neotest", enabled=true},
+  { import = "astrocommunity.test.nvim-coverage", enabled=true},
+  { 
+    "nvim-coverage",
+    event = "VeryLazy",
+    opts = {}
+  },
+  { import = "astrocommunity.git.diffview-nvim", enabled=true},
+  { import = "astrocommunity.pack.php", enabled=true},
+  { import = "astrocommunity.split-and-window.windows-nvim", enabled=true},
+  { import = "astrocommunity.editing-support.rainbow-delimiters-nvim", enabled=true},
+  {
+    "HiPhish/rainbow-delimiters.nvim",
+    event = "VeryLazy",
+  },
+  { import = "astrocommunity.editing-support.zen-mode-nvim", enabled=true},
+  { import = "astrocommunity.color.twilight-nvim", enabled=true},
+  { import = "astrocommunity.diagnostics.trouble-nvim", enabled=true},
+  { import = "astrocommunity.editing-support.todo-comments-nvim", enabled=true},
+  { import = "astrocommunity.motion.nvim-surround", enabled=true},
+  { import = "astrocommunity.colorscheme.catppuccin", enabled=true},
+  {
+    "catppuccin",
+    opts = { transparent_background = true},
+  },
 }
