@@ -19,6 +19,20 @@ return {
   { import = "astrocommunity.pack.bash", enabled=true},
   { import = "astrocommunity.pack.docker", enabled=true},
   { import = "astrocommunity.motion.flash-nvim", enabled=true},
+  {
+    "folke/flash.nvim",
+    event = "VeryLazy",
+    ---@type Flash.Config
+    opts = {},
+    -- stylua: ignore
+    keys = {
+      { "<leader>j", mode = { "n", "x", "o" }, function() require("flash").jump() end, desc = "Flash" },
+      { "S", mode = { "n", "x", "o" }, function() require("flash").treesitter() end, desc = "Flash Treesitter" },
+      { "r", mode = "o", function() require("flash").remote() end, desc = "Remote Flash" },
+      { "R", mode = { "o", "x" }, function() require("flash").treesitter_search() end, desc = "Treesitter Search" },
+      { "<c-s>", mode = { "c" }, function() require("flash").toggle() end, desc = "Toggle Flash Search" },
+    },
+  },
   { import = "astrocommunity.pack.json", enabled=true},
   { import = "astrocommunity.lsp.lsp-signature-nvim", enabled=true},
   { import = "astrocommunity.pack.markdown", enabled=true},
