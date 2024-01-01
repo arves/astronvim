@@ -54,7 +54,7 @@ return {
     event = "VeryLazy",
   },
   { import = "astrocommunity.editing-support.zen-mode-nvim", enabled=true},
-  { import = "astrocommunity.color.twilight-nvim", enabled=true},
+  -- { import = "astrocommunity.color.twilight-nvim", enabled=true},
   { import = "astrocommunity.diagnostics.trouble-nvim", enabled=true},
   { import = "astrocommunity.editing-support.todo-comments-nvim", enabled=true},
   { import = "astrocommunity.motion.nvim-surround", enabled=true},
