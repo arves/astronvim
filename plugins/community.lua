@@ -36,6 +36,7 @@ return {
   { import = "astrocommunity.pack.json", enabled=true},
   { import = "astrocommunity.lsp.lsp-signature-nvim", enabled=true},
   { import = "astrocommunity.pack.markdown", enabled=true},
+  { import = "astrocommunity.pack.tailwindcss", enabled=true},
   { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim", enabled=true},
   { import = "astrocommunity.test.neotest", enabled=true},
   { import = "astrocommunity.test.nvim-coverage", enabled=true},
