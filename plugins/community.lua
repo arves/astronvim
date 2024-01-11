@@ -54,13 +54,31 @@ return {
     event = "VeryLazy",
   },
   { import = "astrocommunity.editing-support.zen-mode-nvim", enabled=true},
-  -- { import = "astrocommunity.color.twilight-nvim", enabled=true},
+  {
+    "folke/zen-mode.nvim",
+    opts = {
+      window = {
+        width = 120,
+        options = {
+          number = true,
+          relativenumber = true,
+        },
+      },
+      plugins = {
+        gitsigns = {enabled = true},
+        tmux = {enabled = true},
+      },
+      -- your configuration comes here
+      -- or leave it empty to use the default settings
+      -- refer to the configuration section below
+    },
+  }, -- { import = "astrocommunity.color.twilight-nvim", enabled=true},
   { import = "astrocommunity.diagnostics.trouble-nvim", enabled=true},
   { import = "astrocommunity.editing-support.todo-comments-nvim", enabled=true},
   { import = "astrocommunity.motion.nvim-surround", enabled=true},
   { import = "astrocommunity.colorscheme.catppuccin", enabled=true},
-  {
-    "catppuccin",
-    opts = { transparent_background = true},
-  },
+  -- {
+  --   "catppuccin",
+  --   opts = { transparent_background = false},
+  -- },
 }
