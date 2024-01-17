@@ -77,8 +77,8 @@ return {
   { import = "astrocommunity.editing-support.todo-comments-nvim", enabled=true},
   { import = "astrocommunity.motion.nvim-surround", enabled=true},
   { import = "astrocommunity.colorscheme.catppuccin", enabled=true},
-  -- {
-  --   "catppuccin",
-  --   opts = { transparent_background = false},
-  -- },
+  {
+    "catppuccin",
+    opts = { transparent_background = true},
+  },
 }
