@@ -78,6 +78,8 @@ return {
   { import = "astrocommunity.colorscheme.catppuccin", enabled=true},
   {
     "catppuccin",
-    opts = { transparent_background = true},
+    opts = { 
+      transparent_background = true
+    },
   },
 }
