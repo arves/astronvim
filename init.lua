@@ -76,6 +76,7 @@ return {
     -- Set tabstop and shiftwidth to 4
     vim.opt.tabstop = 4
     vim.opt.shiftwidth = 4
+    vim.opt.showtabline = 0
     -- Set up custom filetypes
     -- vim.filetype.add {
     --   extension = {
