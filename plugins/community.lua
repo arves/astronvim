@@ -23,8 +23,8 @@ return {
     "folke/flash.nvim",
     event = "VeryLazy",
     ---@type Flash.Config
-    opts = {},
     -- stylua: ignore
+    opts = {},
     keys = {
       { "<leader>j", mode = { "n", "x", "o" }, function() require("flash").jump() end, desc = "Flash" },
       { "S", mode = { "n", "x", "o" }, function() require("flash").treesitter() end, desc = "Flash Treesitter" },
@@ -75,6 +75,13 @@ return {
   { import = "astrocommunity.diagnostics.trouble-nvim", enabled=true},
   { import = "astrocommunity.editing-support.todo-comments-nvim", enabled=true},
   { import = "astrocommunity.motion.nvim-surround", enabled=true},
+  -- { import = "astrocommunity.colorscheme.gruvbox-baby", enabled=true},
+  -- {
+  --   "gruvbox-baby",
+  --   config = function()
+  --     vim.g.gruvbox_baby_transparent_mode = 1
+  --   end,
+  -- }
   { import = "astrocommunity.colorscheme.catppuccin", enabled=true},
   {
     "catppuccin",

@@ -20,6 +20,7 @@ return {
   -- Set colorscheme to use
   -- colorscheme = "astrodark",
   -- colorscheme = "gruvbox-baby",
+  -- colorscheme = "gruvbox-material",
   colorscheme = "catppuccin",
   -- colorscheme = "gruvbox",
 
@@ -74,8 +75,8 @@ return {
   polish = function()
     vim.api.nvim_set_option("clipboard","unnamed")
     -- Set tabstop and shiftwidth to 4
-    vim.opt.tabstop = 4
-    vim.opt.shiftwidth = 4
+    vim.opt.tabstop = 2
+    vim.opt.shiftwidth = 2
     vim.opt.showtabline = 0
     -- Set up custom filetypes
     -- vim.filetype.add {
