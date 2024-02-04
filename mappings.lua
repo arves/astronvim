@@ -71,6 +71,9 @@ return {
 
     -- Telescope specifics
     ["<leader>fT"] = { ":TodoTelescope<CR>", desc = "Toggle todo" },
+    -- Open noice
+    ["<leader>fN"] = { ":Telescope noice<CR>", desc = "Find noice" },
+
     -- Remap scroll up and down to now center the screen
     ["<c-d>"] = { "<C-d>zz", desc = "Scroll down and center" },
     ["<c-u>"] = { "<C-u>zz", desc = "Scroll up and center" },

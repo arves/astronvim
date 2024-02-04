@@ -10,6 +10,7 @@ return {
   },
   cmd = "Telescope",
   opts = function()
+    require("telescope").load_extension("noice")
     local actions = require "telescope.actions"
     local get_icon = require("astronvim.utils").get_icon
     local trouble = require("trouble.providers.telescope")
