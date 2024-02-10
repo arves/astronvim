@@ -21,7 +21,8 @@ return {
   -- colorscheme = "astrodark",
   -- colorscheme = "gruvbox-baby",
   -- colorscheme = "gruvbox-material",
-  colorscheme = "catppuccin",
+  -- colorscheme = "catppuccin",
+  colorscheme = "tokyonight-night",
   -- colorscheme = "gruvbox",
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
@@ -78,6 +79,7 @@ return {
     vim.opt.tabstop = 2
     vim.opt.shiftwidth = 2
     vim.opt.showtabline = 0
+    -- vim.o.background = "dark"
     -- Set up custom filetypes
     -- vim.filetype.add {
     --   extension = {

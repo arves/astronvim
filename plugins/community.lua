@@ -4,107 +4,94 @@ return {
   -- example of importing a plugin, comment out to use it or add your own
   -- available plugins can be found at https://github.com/AstroNvim/astrocommunity
 
-  { import = "astrocommunity.pack.typescript", enabled=true},
-  -- { import = "astrocommunity.pack.python", enabled=true},
-  { import = "astrocommunity.pack.python-ruff", enabled=true},
-  {
-    "venv-selector.nvim",
-    opts = {},
-	  keys = {{
-      -- Keymap to open VenvSelector to pick a venv.
-		  "<leader>vs", "<cmd>:VenvSelect<cr>",
-		  -- Keymap to retrieve the venv from a cache (the one previously used for the same project directory).
-		  "<leader>vc", "<cmd>:VenvSelectCached<cr>"
-	  },},
-  },
-  { import = "astrocommunity.pack.bash", enabled=true},
-  { import = "astrocommunity.pack.docker", enabled=true},
-  { import = "astrocommunity.motion.flash-nvim", enabled=true},
-  {
-    "folke/flash.nvim",
-    event = "VeryLazy",
-    ---@type Flash.Config
-    -- stylua: ignore
-    opts = {},
-    keys = {
-      { "<leader>j", mode = { "n", "x", "o" }, function() require("flash").jump() end, desc = "Flash" },
-      { "S", mode = { "n", "x", "o" }, function() require("flash").treesitter() end, desc = "Flash Treesitter" },
-      { "r", mode = "o", function() require("flash").remote() end, desc = "Remote Flash" },
-      { "R", mode = { "o", "x" }, function() require("flash").treesitter_search() end, desc = "Treesitter Search" },
-      { "<c-s>", mode = { "c" }, function() require("flash").toggle() end, desc = "Toggle Flash Search" },
-    },
-  },
-  { import = "astrocommunity.pack.json", enabled=true},
-  { import = "astrocommunity.lsp.lsp-signature-nvim", enabled=true},
-  { import = "astrocommunity.pack.markdown", enabled=true},
-  { import = "astrocommunity.pack.tailwindcss", enabled=true},
-  { import = "astrocommunity.test.neotest", enabled=true},
-  { import = "astrocommunity.test.nvim-coverage", enabled=true},
-  { 
-    "nvim-coverage",
-    event = "VeryLazy",
-    opts = {}
-  },
-  { import = "astrocommunity.git.diffview-nvim", enabled=true},
-  { import = "astrocommunity.pack.php", enabled=true},
-  { import = "astrocommunity.split-and-window.windows-nvim", enabled=true},
-  { import = "astrocommunity.editing-support.rainbow-delimiters-nvim", enabled=true},
-  {
-    "HiPhish/rainbow-delimiters.nvim",
-    event = "VeryLazy",
-  },
-  { import = "astrocommunity.editing-support.zen-mode-nvim", enabled=true},
-  {
-    "folke/zen-mode.nvim",
-    opts = {
-      window = {
-        width = 120,
-        options = {
-          number = true,
-          relativenumber = true,
-        },
-      },
-      plugins = {
-        gitsigns = {enabled = true},
-        tmux = {enabled = true},
-      },
-      -- your configuration comes here
-      -- or leave it empty to use the default settings
-      -- refer to the configuration section below
-    },
-  }, -- { import = "astrocommunity.color.twilight-nvim", enabled=true},
-  { import = "astrocommunity.diagnostics.trouble-nvim", enabled=true},
-  { import = "astrocommunity.editing-support.todo-comments-nvim", enabled=true},
-  { import = "astrocommunity.motion.nvim-surround", enabled=true},
-  { import = "astrocommunity.utility.noice-nvim", enabled=true},
-  {
-    "folke/noice.nvim",
-    opts = {
-      presets = {
-        -- you can enable a preset by setting it to true, or a table that will override the preset config
-        -- you can also add custom presets that you can enable/disable with enabled=true
-        bottom_search = false, -- use a classic bottom cmdline for search
-        command_palette = false, -- position the cmdline and popupmenu together
-        long_message_to_split = true, -- long messages will be sent to a split
-        inc_rename = false, -- enables an input dialog for inc-rename.nvim
-        lsp_doc_border = false, -- add a border to hover docs and signature help
-      },
-    },
-  },
-  -- This one works nicely with noice
-  { import = "astrocommunity.completion.cmp-cmdline", enabled=true},
-  -- { import = "astrocommunity.colorscheme.gruvbox-baby", enabled=true},
+  -- { import = "astrocommunity.pack.typescript", enabled=true},
+  -- { import = "astrocommunity.pack.python-ruff", enabled=true},
   -- {
-  --   "gruvbox-baby",
-  --   config = function()
-  --     vim.g.gruvbox_baby_transparent_mode = 1
-  --   end,
+  --   "venv-selector.nvim",
+  --   opts = {},
+	 --  keys = {{
+  --     -- Keymap to open VenvSelector to pick a venv.
+		--   "<leader>vs", "<cmd>:VenvSelect<cr>",
+		--   -- Keymap to retrieve the venv from a cache (the one previously used for the same project directory).
+		--   "<leader>vc", "<cmd>:VenvSelectCached<cr>"
+	 --  },},
+  -- },
+  -- { import = "astrocommunity.pack.bash", enabled=true},
+  -- { import = "astrocommunity.pack.docker", enabled=true},
+  -- { import = "astrocommunity.motion.flash-nvim", enabled=true},
+  -- {
+  --   "folke/flash.nvim",
+  --   event = "VeryLazy",
+  --   ---@type Flash.Config
+  --   -- stylua: ignore
+  --   opts = {},
+  --   keys = {
+  --     { "<leader>j", mode = { "n", "x", "o" }, function() require("flash").jump() end, desc = "Flash" },
+  --     { "S", mode = { "n", "x", "o" }, function() require("flash").treesitter() end, desc = "Flash Treesitter" },
+  --     { "r", mode = "o", function() require("flash").remote() end, desc = "Remote Flash" },
+  --     { "R", mode = { "o", "x" }, function() require("flash").treesitter_search() end, desc = "Treesitter Search" },
+  --     { "<c-s>", mode = { "c" }, function() require("flash").toggle() end, desc = "Toggle Flash Search" },
+  --   },
+  -- },
+  -- { import = "astrocommunity.pack.json", enabled=true},
+  -- { import = "astrocommunity.lsp.lsp-signature-nvim", enabled=true},
+  -- { import = "astrocommunity.pack.markdown", enabled=true},
+  -- { import = "astrocommunity.pack.tailwindcss", enabled=true},
+  -- { import = "astrocommunity.test.neotest", enabled=true},
+  -- { import = "astrocommunity.test.nvim-coverage", enabled=true},
+  -- { 
+  --   "nvim-coverage",
+  --   event = "VeryLazy",
+  --   opts = {}
+  -- },
+  -- { import = "astrocommunity.git.diffview-nvim", enabled=true},
+  -- { import = "astrocommunity.pack.php", enabled=true},
+  -- { import = "astrocommunity.split-and-window.windows-nvim", enabled=true},
+  -- { import = "astrocommunity.editing-support.rainbow-delimiters-nvim", enabled=true},
+  -- {
+  --   "HiPhish/rainbow-delimiters.nvim",
+  --   event = "VeryLazy",
+  -- },
+  -- { import = "astrocommunity.diagnostics.trouble-nvim", enabled=true},
+  -- { import = "astrocommunity.editing-support.todo-comments-nvim", enabled=true},
+  -- { import = "astrocommunity.motion.nvim-surround", enabled=true},
+  -- { import = "astrocommunity.utility.noice-nvim", enabled=true},
+  -- {
+  --   "folke/noice.nvim",
+  --   opts = {
+  --     lsp = {
+  --       hover = {
+  --         enabled = false,
+  --       },
+  --       signature = {
+  --         enabled = false,
+  --       },
+  --     },
+  --     presets = {
+  --       -- you can enable a preset by setting it to true, or a table that will override the preset config
+  --       -- you can also add custom presets that you can enable/disable with enabled=true
+  --       bottom_search = false, -- use a classic bottom cmdline for search
+  --       command_palette = false, -- position the cmdline and popupmenu together
+  --       long_message_to_split = true, -- long messages will be sent to a split
+  --       inc_rename = false, -- enables an input dialog for inc-rename.nvim
+  --       lsp_doc_border = false, -- add a border to hover docs and signature help
+  --     },
+  --   },
+  -- },
+  -- This one works nicely with noice
+  -- { import = "astrocommunity.completion.cmp-cmdline", enabled=true},
+  -- { import = "astrocommunity.colorscheme.tokyonight-nvim", enabled=true},
+  -- {
+  --   "folke/tokyonight.nvim",
+  --   opts = {
+  --     transparent = false,
+  --   }
   -- }
-  { import = "astrocommunity.colorscheme.catppuccin", enabled=true},
-  {
-    "catppuccin",
-    opts = { 
-      transparent_background = true
-    },
-  },
+  -- { import = "astrocommunity.colorscheme.catppuccin", enabled=true},
+  -- {
+  --   "catppuccin",
+  --   opts = { 
+  --     transparent_background = true
+  --   },
+  -- },
 }
