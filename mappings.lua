@@ -95,6 +95,10 @@ return {
     -- Markdown preview
     ["<leader>um"] = {":MarkdownPreview<CR>", desc = "󰍔 Markdown preview" },
 
+    ["<leader>dl"] = {":DapLoadLaunchJSON<CR>", desc = "󰑓 Load launch data" },
+
+
+
   },
   t = {
     -- setting a mapping to false will disable it
