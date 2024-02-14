@@ -10,7 +10,6 @@ return {
   },
   cmd = "Telescope",
   opts = function()
-    -- vim.api.nvim_set_hl(0,"TelescopeNormal",{bg="none"})
     require("telescope").load_extension("noice")
     local actions = require "telescope.actions"
     local get_icon = require("astronvim.utils").get_icon
