@@ -1,3 +1,4 @@
+local is_available = require("astronvim.utils").is_available
 -- Mapping data with "desc" stored directly by vim.keymap.set().
 --
 -- Please use this mappings table to set keyboard mapping since this is the
@@ -55,14 +56,20 @@ return {
     ["<leader>Nr"] = { ":lua require('neotest').run.run()<CR>", desc = "Run nearest test" },
     ["<leader>NR"] = { ":lua require('neotest').run.run(vim.fn.expand('%'))<CR>", desc = "Run all tests in file" },
     ["<leader>Nd"] = { ":lua require('neotest').run.run({strategy = 'dap'})<CR>", desc = "Debug nearest test" },
-    ["<leader>ND"] = { ":lua require('neotest').run.run({vim.fn.expand('%'), strategy = 'dap'})<CR>", desc = "Debug all tests in file" },
+    ["<leader>ND"] = {
+      ":lua require('neotest').run.run({vim.fn.expand('%'), strategy = 'dap'})<CR>",
+      desc = "Debug all tests in file",
+    },
     ["<leader>Ns"] = { ":lua require('neotest').summary.toggle()<CR>", desc = "Open summary" },
     ["<leader>Nq"] = { ":lua require('neotest').run.stop()<CR>", desc = "Stop neotest" },
     ["<leader>Nw"] = { ":lua require('neotest').watch.toggle()<CR>", desc = "Toggle watch" },
-    ["<leader>NW"] = { ":lua require('neotest').watch.toggle(vim.fn.expand('%'))<CR>", desc = "Toggle watch entire file" },
+    ["<leader>NW"] = {
+      ":lua require('neotest').watch.toggle(vim.fn.expand('%'))<CR>",
+      desc = "Toggle watch entire file",
+    },
 
     -- Trouble specifics
-    ["<leader>x"] = { desc = "󱍼 Trouble"},
+    ["<leader>x"] = { desc = "󱍼 Trouble" },
     ["<leader>xt"] = { ":TodoTrouble<CR>", desc = "Toggle todo" },
     ["<leader>xd"] = { ":TroubleToggle document_diagnostics<CR>", desc = "Document Diagnostics" },
     ["<leader>xD"] = { ":TroubleToggle workspace_diagnostics<CR>", desc = "Workspace Diagnostics" },
@@ -90,15 +97,28 @@ return {
     ["<leader>v"] = { desc = "󰇺 Environments" },
 
     -- Zen mode
-    ["<leader>z"] = {":ZenMode<CR>", desc = "󰋱 Zen mode" },
+    ["<leader>z"] = { ":ZenMode<CR>", desc = "󰋱 Zen mode" },
 
     -- Markdown preview
-    ["<leader>um"] = {":MarkdownPreview<CR>", desc = "󰍔 Markdown preview" },
+    ["<leader>um"] = { ":MarkdownPreview<CR>", desc = "󰍔 Markdown preview" },
 
-    ["<leader>dl"] = {":DapLoadLaunchJSON<CR>", desc = "󰑓 Load launch data" },
+    ["<leader>dl"] = { ":DapLoadLaunchJSON<CR>", desc = "󰑓 Load launch data" },
 
+    ["<leader>lR"] = {
+      function() vim.lsp.buf.rename()() end,
+      desc = "Rename current symbol",
+    },
 
-
+    ["<leader>lr"] = {
+      function()
+        if is_available "telescope.nvim" then
+          require("telescope.builtin").lsp_references()
+        else
+          vim.lsp.buf.references()
+        end
+      end,
+      desc = "Search references",
+    },
   },
   t = {
     -- setting a mapping to false will disable it
