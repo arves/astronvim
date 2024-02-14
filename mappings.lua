@@ -119,6 +119,12 @@ return {
       end,
       desc = "Search references",
     },
+
+    -- Adding fuzzy search for word under cursor within the current buffer
+    ["<leader>fd"] = {
+      function() require("telescope.builtin").current_buffer_fuzzy_find { default_text = vim.fn.expand "<cword>" } end,
+      desc = "Find word in buffer",
+    },
   },
   t = {
     -- setting a mapping to false will disable it
