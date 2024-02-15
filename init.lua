@@ -74,16 +74,14 @@ return {
   -- augroups/autocommands and custom filetypes also this just pure lua so
   -- anything that doesn't fit in the normal config locations above can go here
   polish = function()
-
     -- Clearing out highlight groups for transparent theme
-    require('transparent').clear_prefix('NeoTree')
-    require('transparent').clear_prefix('Telescope')
-    require('transparent').clear_prefix('Trouble')
-    require('transparent').clear_prefix('StatusLine')
-    -- 
+    require("transparent").clear_prefix "NeoTree"
+    require("transparent").clear_prefix "Telescope"
+    require("transparent").clear_prefix "Trouble"
+    require("transparent").clear_prefix "StatusLine"
+    --
 
-
-    vim.api.nvim_set_option("clipboard","unnamed")
+    vim.api.nvim_set_option("clipboard", "unnamed")
     -- Set tabstop and shiftwidth to 4
     vim.opt.tabstop = 2
     vim.opt.shiftwidth = 2
