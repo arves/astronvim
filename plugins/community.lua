@@ -1,6 +1,7 @@
 return {
   -- Add the community repository of plugin specifications
   "AstroNvim/astrocommunity",
+  { import = "astrocommunity.motion.marks-nvim", enabled = true },
   -- example of importing a plugin, comment out to use it or add your own
   -- available plugins can be found at https://github.com/AstroNvim/astrocommunity
 
@@ -9,12 +10,12 @@ return {
   -- {
   --   "venv-selector.nvim",
   --   opts = {},
-	 --  keys = {{
+  --  keys = {{
   --     -- Keymap to open VenvSelector to pick a venv.
-		--   "<leader>vs", "<cmd>:VenvSelect<cr>",
-		--   -- Keymap to retrieve the venv from a cache (the one previously used for the same project directory).
-		--   "<leader>vc", "<cmd>:VenvSelectCached<cr>"
-	 --  },},
+  --   "<leader>vs", "<cmd>:VenvSelect<cr>",
+  --   -- Keymap to retrieve the venv from a cache (the one previously used for the same project directory).
+  --   "<leader>vc", "<cmd>:VenvSelectCached<cr>"
+  --  },},
   -- },
   -- { import = "astrocommunity.pack.bash", enabled=true},
   -- { import = "astrocommunity.pack.docker", enabled=true},
@@ -39,7 +40,7 @@ return {
   -- { import = "astrocommunity.pack.tailwindcss", enabled=true},
   -- { import = "astrocommunity.test.neotest", enabled=true},
   -- { import = "astrocommunity.test.nvim-coverage", enabled=true},
-  -- { 
+  -- {
   --   "nvim-coverage",
   --   event = "VeryLazy",
   --   opts = {}
@@ -90,7 +91,7 @@ return {
   -- { import = "astrocommunity.colorscheme.catppuccin", enabled=true},
   -- {
   --   "catppuccin",
-  --   opts = { 
+  --   opts = {
   --     transparent_background = true
   --   },
   -- },
