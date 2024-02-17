@@ -75,9 +75,9 @@ return {
   -- anything that doesn't fit in the normal config locations above can go here
   polish = function()
     -- Clearing out highlight groups for transparent theme
-    require("transparent").clear_prefix "NeoTree"
-    require("transparent").clear_prefix "Telescope"
-    require("transparent").clear_prefix "Trouble"
+    -- require("transparent").clear_prefix "NeoTree"
+    -- require("transparent").clear_prefix "Telescope"
+    -- require("transparent").clear_prefix "Trouble"
     require("transparent").clear_prefix "StatusLine"
     --
 
@@ -86,7 +86,8 @@ return {
     vim.opt.tabstop = 2
     vim.opt.shiftwidth = 2
     vim.opt.showtabline = 0
-    vim.g.tokyonight_dark_float = false
+    -- TODO: what does this line under here do?
+    -- vim.g.tokyonight_dark_float = false
     -- vim.o.background = "dark"
     -- Set up custom filetypes
     -- vim.filetype.add {
