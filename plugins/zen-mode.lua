@@ -7,20 +7,21 @@ return {
     window = {
       backdrop = 1,
       width = function() return math.min(120, vim.o.columns * 0.75) end,
-      height = 0.9,
+      height = 1,
       options = {
         number = false,
         relativenumber = true,
         foldcolumn = "0",
         list = false,
         showbreak = "NONE",
-        signcolumn = "no",
+        signcolumn = "yes",
       },
     },
     plugins = {
       options = {
         cmdheight = 1,
         laststatus = 0,
+        gitsigns = { enabled = false },
       },
     },
     on_open = function() -- disable diagnostics, indent blankline, winbar, and offscreen matchup
