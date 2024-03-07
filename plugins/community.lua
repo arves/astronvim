@@ -1,8 +1,55 @@
 return {
   -- Add the community repository of plugin specifications
   "AstroNvim/astrocommunity",
-  { import = "astrocommunity.motion.marks-nvim", enabled = true },
-  { import = "astrocommunity.file-explorer.oil-nvim", enabled = true },
+  { import = "astrocommunity.motion.marks-nvim" },
+  { import = "astrocommunity.file-explorer.oil-nvim" },
+  { import = "astrocommunity.pack.bash" },
+  { import = "astrocommunity.test.nvim-coverage" },
+  { import = "astrocommunity.pack.docker" },
+  { import = "astrocommunity.git.diffview-nvim" },
+  { import = "astrocommunity.pack.json" },
+  { import = "astrocommunity.pack.lua" },
+  { import = "astrocommunity.pack.markdown" },
+  { import = "astrocommunity.git.neogit" },
+  { import = "astrocommunity.test.neotest" },
+  { import = "astrocommunity.pack.php" },
+  { import = "astrocommunity.pack.python-ruff" },
+  { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
+  { import = "astrocommunity.motion.nvim-surround" },
+  { import = "astrocommunity.pack.tailwindcss" },
+  { import = "astrocommunity.editing-support.todo-comments-nvim" },
+  { import = "astrocommunity.diagnostics.trouble-nvim" },
+  { import = "astrocommunity.pack.typescript" },
+  { import = "astrocommunity.motion.harpoon" },
+  { import = "astrocommunity.split-and-window.windows-nvim" },
+  { import = "astrocommunity.debugging.nvim-dap-virtual-text" },
+  { import = "astrocommunity.color.transparent-nvim" },
+  { import = "astrocommunity.editing-support.zen-mode-nvim" },
+  {
+    "folke/zen-mode.nvim",
+    opts = {
+      window = {
+        backdrop = 1,
+        width = function() return math.min(120, vim.o.columns * 0.75) end,
+        height = 1,
+        options = {
+          number = false,
+          relativenumber = true,
+          foldcolumn = "0",
+          list = false,
+          showbreak = "NONE",
+          signcolumn = "yes",
+        },
+      },
+      plugins = {
+        options = {
+          cmdheight = 1,
+          laststatus = 0,
+          gitsigns = { enabled = false },
+        },
+      },
+    },
+  },
   -- example of importing a plugin, comment out to use it or add your own
   -- available plugins can be found at https://github.com/AstroNvim/astrocommunity
 

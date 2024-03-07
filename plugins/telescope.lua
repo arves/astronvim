@@ -11,7 +11,5 @@ return {
     opts.defaults.mappings.i["<c-o>"] = trouble.open_with_trouble
     opts.defaults.mappings.n["<c-o>"] = trouble.open_with_trouble
     require "plugins.configs.telescope"(plugins, opts)
-    local telescope = require "telescope"
-    telescope.load_extension "noice"
   end,
 }
