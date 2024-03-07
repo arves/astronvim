@@ -2,6 +2,7 @@ return {
   -- Add the community repository of plugin specifications
   "AstroNvim/astrocommunity",
   { import = "astrocommunity.motion.marks-nvim" },
+  { import = "astrocommunity.motion.flash-nvim" },
   { import = "astrocommunity.file-explorer.oil-nvim" },
   { import = "astrocommunity.pack.bash" },
   { import = "astrocommunity.test.nvim-coverage" },
@@ -25,6 +26,7 @@ return {
   { import = "astrocommunity.debugging.nvim-dap-virtual-text" },
   { import = "astrocommunity.color.transparent-nvim" },
   { import = "astrocommunity.editing-support.zen-mode-nvim" },
+  { import = "astrocommunity.completion.cmp-cmdline" },
   {
     "folke/zen-mode.nvim",
     opts = {
