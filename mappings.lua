@@ -93,6 +93,7 @@ return {
     ["<leader>DF"] = { ":DiffviewFileHistory<CR>", desc = "All history" },
     ["<leader>Dc"] = { ":DiffviewOpen<CR>", desc = "Changed files" },
     ["<leader>Dr"] = { ":DiffviewRefresh<CR>", desc = "Refresh" },
+    ["<leader>Dq"] = { ":DiffviewClose<CR>", desc = "Close diffview" },
 
     ["<leader>v"] = { desc = "󰇺 Environments" },
 
