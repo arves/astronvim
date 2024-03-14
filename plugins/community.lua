@@ -27,6 +27,7 @@ return {
   { import = "astrocommunity.color.transparent-nvim" },
   { import = "astrocommunity.editing-support.zen-mode-nvim" },
   { import = "astrocommunity.completion.cmp-cmdline" },
+  { import = "astrocommunity.diagnostics.lsp_lines-nvim" },
   {
     "folke/zen-mode.nvim",
     opts = {
