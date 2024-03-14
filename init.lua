@@ -1,3 +1,4 @@
+local ui = require "astronvim.utils.ui"
 return {
   -- Configure AstroNvim updates
   updater = {
@@ -80,6 +81,9 @@ return {
     -- require("transparent").clear_prefix "Trouble"
     require("transparent").clear_prefix "StatusLine"
     --
+    --
+    -- hide statusline from the
+    ui.toggle_statusline()
 
     vim.api.nvim_set_option("clipboard", "unnamed")
     -- Set tabstop and shiftwidth to 4
