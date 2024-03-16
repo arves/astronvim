@@ -20,10 +20,10 @@ return {
 
   -- Set colorscheme to use
   -- colorscheme = "astrodark",
-  -- colorscheme = "gruvbox-baby",
+  colorscheme = "gruvbox-baby",
   -- colorscheme = "gruvbox-material",
   -- colorscheme = "catppuccin",
-  colorscheme = "tokyonight-night",
+  -- colorscheme = "tokyonight-night",
   -- colorscheme = "gruvbox",
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
@@ -90,6 +90,7 @@ return {
     vim.opt.tabstop = 2
     vim.opt.shiftwidth = 2
     vim.opt.showtabline = 0
+    -- vim.api.nvim_set_hl(0, "TelescopeBorder", { bg = "none", fg = "" })
     -- TODO: what does this line under here do?
     -- vim.g.tokyonight_dark_float = false
     -- vim.o.background = "dark"

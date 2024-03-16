@@ -1,5 +1,6 @@
 return {
   "folke/tokyonight.nvim",
+  enabled = false,
   config = function()
     -- Now we make telescope borderless
     require("tokyonight").setup {
