@@ -1,7 +1,7 @@
 local fg_dark = "#504945"
 local fg_title = "#fe8019"
-local bg_light = "#222222"
-local bg_dark = "#222222"
+local bg_light = "#212121"
+local bg_dark = "#212121"
 return { -- this table overrides highlights in all themes
   CursorLine = { bg = "none" },
 
