@@ -28,6 +28,7 @@ return {
   { import = "astrocommunity.editing-support.zen-mode-nvim" },
   { import = "astrocommunity.completion.cmp-cmdline" },
   { import = "astrocommunity.diagnostics.lsp_lines-nvim" },
+  { import = "astrocommunity.register.nvim-neoclip-lua" },
   {
     "folke/zen-mode.nvim",
     opts = {
