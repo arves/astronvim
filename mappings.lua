@@ -32,6 +32,8 @@ return {
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
 
+    ["<leader>T"] = { ":tabnew<CR>", desc = "New tab" },
+
     -- Splitters
     ["<leader>s"] = { desc = "󰤼 Splitters" },
     ["<leader>sv"] = { "<C-w>v", desc = "Split window vertically" },
