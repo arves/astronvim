@@ -20,9 +20,9 @@ return {
 
   -- Set colorscheme to use
   -- colorscheme = "astrodark",
-  colorscheme = "gruvbox-baby",
+  -- colorscheme = "gruvbox-baby",
   -- colorscheme = "gruvbox-material",
-  -- colorscheme = "catppuccin",
+  colorscheme = "catppuccin-mocha",
   -- colorscheme = "tokyonight-night",
   -- colorscheme = "gruvbox",
 
