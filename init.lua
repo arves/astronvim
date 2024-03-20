@@ -83,13 +83,13 @@ return {
     --
     --
     -- hide statusline from the
-    ui.toggle_statusline()
+    -- ui.toggle_statusline()
 
     vim.api.nvim_set_option("clipboard", "unnamed")
     -- Set tabstop and shiftwidth to 4
     vim.opt.tabstop = 2
     vim.opt.shiftwidth = 2
-    vim.opt.showtabline = 0
+    -- vim.opt.showtabline = 0
     -- vim.api.nvim_set_hl(0, "TelescopeBorder", { bg = "none", fg = "" })
     -- TODO: what does this line under here do?
     -- vim.g.tokyonight_dark_float = false
