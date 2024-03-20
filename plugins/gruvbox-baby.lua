@@ -1,5 +1,6 @@
 return {
   "luisiacc/gruvbox-baby",
+  enabled = false,
   config = function()
     vim.g.gruvbox_baby_transparent_mode = 1
     -- vim.g.gruvbox_baby_telescope_theme = 1
