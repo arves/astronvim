@@ -1,9 +1,11 @@
 local fg_dark = "#504945"
-local fg_title = "#fe8019"
-local bg_light = "#212121"
-local bg_dark = "#212121"
+local fg_title = "#a6e3a1"
+local bg_light = "#181825"
+local bg_dark = "#181825"
 return { -- this table overrides highlights in all themes
   CursorLine = { bg = "none" },
+  TabLine = { bg = "none" },
+  NotifyBackground = { bg = "#000000" },
 
   -- Custom telescope adjusted for gruvbox
   -- TelescopeNormal = { bg = bg_dark, fg = fg_dark },
